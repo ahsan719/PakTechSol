@@ -3,11 +3,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-6">
-                    <script>document.write(new Date().getFullYear())</script> © Paywell.
+                    <script>document.write(new Date().getFullYear())</script> © All Rights Reserved.
                 </div>
                 <div class="col-sm-6">
                     <div class="text-sm-end d-none d-sm-block">
-                        Design & Develop by Hillsofts Technology.
+                        Design & Develop by PakTechSol.
                     </div>
                 </div>
             </div>
