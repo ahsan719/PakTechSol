@@ -127,7 +127,7 @@ CREATE TABLE `portfolio` (
 
 INSERT INTO `portfolio` (`id`, `port_title`, `port_desc`, `port_detail`, `ufile`, `updated_at`) VALUES
 (3, 'App Development', 'At Pak Tech Sol, we create tailored, high-performance mobile apps with seamless design and advanced technology integration to meet your business needs.', 'At Pak Tech Sol, we specialize in developing mobile apps that deliver top performance, tailored to your specific business needs. Our team is experienced in creating both native and cross-platform apps for Android and iOS, ensuring intuitive UI/UX design, smooth functionality, and the incorporation of cutting-edge technologies like AI and IoT. We manage every stage of the process, from planning and prototyping to development and rigorous testing.
-Beyond app creation, we offer ongoing maintenance and updates to ensure your app stays competitive and up-to-date with the latest technological advancements. Our agile development approach ensures flexibility, timely delivery, and constant client collaboration, helping you achieve your goals efficiently. ', '926070de04f0-df57-11ec-85a8-bda8f2c6ca77-rimg-w720-h720-gmir.jpg', NOW());
+Beyond app creation, we offer ongoing maintenance and updates to ensure your app stays competitive and up-to-date with the latest technological advancements. Our agile development approach ensures flexibility, timely delivery, and constant client collaboration, helping you achieve your goals efficiently. ', 'app.jpg', NOW());
 
 -- --------------------------------------------------------
 -- Table structure for table `team`
