@@ -155,7 +155,7 @@ if (isset($_POST['save'])) {
 
         <!--====== Map Area Start ======-->
         <section class="section map-area">
-        <iframe src="https://www.bing.com/maps?where=Haripur%2C+Khyber+Pakhtunkhuwa%2C+PK&cp=34.018598%7E72.915359&lvl=14.8"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.8612336485576!2d72.91739769279957!3d33.91011830691402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfb1616a6cb05b%3A0x9d91674d87ef964b!2sSinoPak%20Centre%20for%20Artificial%20Intelligence!5e1!3m2!1sen!2s!4v1721143612394!5m2!1sen!2s"></iframe>
 
             </section>
         <!--====== Map Area End ======-->
