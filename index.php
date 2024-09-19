@@ -211,61 +211,54 @@ print "
 
 
 
-        <!-- ***** Our Team Area Start ***** -->
-
-
-        <?php
-$name = "Our Team";
-$position = "At Pak Tech Sol, we are driven by a diverse and talented team of professionals who are passionate about technology and innovation. Each member brings unique expertise and a shared commitment to delivering high-quality software solutions. Our collaborative approach allows us to tackle complex challenges, ensuring that our clients receive custom, cutting-edge digital products tailored to their needs. With a strong focus on teamwork, creativity, and excellence, we strive to push the boundaries of what’s possible in the ever-evolving world of technology.";
-?>
-
-
+<!-- ***** Our Team Area Start ***** -->
 <section id="team" class="team-area overflow-hidden ptb_100">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-7">
                 <!-- Section Heading -->
                 <div class="section-heading text-center">
-                    <h2><?php print $name ?></h2>
-                    <p class="d-none d-sm-block mt-4"><?php print $position ?></p>
+                    <h2>Our Team</h2>
+                    <p class="d-none d-sm-block mt-4">Our diverse team of skilled professionals brings innovation and expertise to every project. Together, we strive for excellence and deliver impactful solutions.</p>
                 </div>
             </div>
         </div>
         <!-- Team Members -->
-        <div class="row items portfolio-items">
+        <div class="row items team-items">
 
-        <?php
-            $query = "SELECT * FROM team ORDER BY id DESC LIMIT 6";
-            $r123 = mysqli_query($con, $query);
+            <?php
+                $query = "SELECT * FROM team ORDER BY id DESC LIMIT 6";
+                $r123 = mysqli_query($con, $query);
 
-            while ($ro = mysqli_fetch_array($r123)) {
-                $id = "$ro[id]";
-                $name = "$ro[name]";
-                $position = "$ro[position]";
-                $bio = "$ro[bio]";
-                $profile_picture = "$ro[profile_picture]";
+                while ($ro = mysqli_fetch_array($r123)) {
+                    $id = "$ro[id]";
+                    $name = "$ro[name]";
+                    $position = "$ro[position]";
+                    $bio = "$ro[bio]";
+                    $profile_picture = "$ro[profile_picture]";
 
-                print "
-                <div class='col-12 col-sm-6 col-lg-4 team-item'>
-                    <!-- Single Team Member -->
-                    <div class='single-case-study'>
-
-                        <!-- Team Member Thumb -->
-                        <a href='teamdetail.php?id=$id'>
-                        <img src='dashboard/uploads/team/$profile_picture' alt=''>
-                        <!-- Team Member Info -->
-                        <a href='teamdetail.php?id=$id' class='case-studies-overlay'>
-                        <div class='team-info text-center mt-4'>
-                            <h5 class='mb-0'>$name</h5>
-                            <p class='text-muted'>$position</p>
-                            <p class='text-muted'>$bio</p>
+                    print "
+                    <div class='col-12 col-sm-6 col-lg-4 team-item' data-groups='['team','members']'>
+                        <!-- Single Team Member -->
+                        <div class='single-case-studies'>
+                            <!-- Team Member Thumb -->
+                            <a href='teamdetail.php?id=$id'>
+                                <img src='dashboard/uploads/team/$profile_picture' alt=''>
+                            </a>
+                            <!-- Team Member Overlay -->
+                            <a href='teamdetail.php?id=$id' class='case-studies-overlay'>
+                                <!-- Overlay Text -->
+                                <span class='overlay-text text-center p-3'>
+                                    <h3 class='text-white mb-3'>$name</h3>
+                                    <p class='text-white'>$position</p>
+                                    <p class='text-white'>$bio</p>
+                                </span>
+                            </a>
                         </div>
                     </div>
-                </div>
-                ";
-            }
-        ?>
-
+                    ";
+                }
+            ?>
         </div>
         <div class="row justify-content-center">
             <a href="team.php" class="btn btn-bordered mt-4">View More</a>
@@ -273,6 +266,7 @@ $position = "At Pak Tech Sol, we are driven by a diverse and talented team of pr
     </div>
 </section>
 <!-- ***** Our Team Area End ***** -->
+
 
 
         <!-- ***** Price Plan Area Start ***** -->
