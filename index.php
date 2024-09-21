@@ -223,7 +223,7 @@ print "
                 </div>
             </div>
         </div>
-        <!-- Team Members -->
+        <!-- Team Members  All-->
         <div class="row items team-items">
 
             <?php
