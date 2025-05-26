@@ -8,6 +8,7 @@
                     <?php
     $rr=mysqli_query($con,"SELECT * FROM static");
 $r = mysqli_fetch_row($rr);
+
 $stitle = $r[1];
 $stext=$r[2];
 ?>
