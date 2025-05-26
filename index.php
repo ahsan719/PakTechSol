@@ -13,6 +13,7 @@ $stitle = $r[1];
 $stext=$r[2];
 ?>
 
+
                         <div class="welcome-intro">
                             <h1 class="text-white"><?php print $stitle?></h1>
                             <p class="text-white my-4"><?php print $stext?></p>
